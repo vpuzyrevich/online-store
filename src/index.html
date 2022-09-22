@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
+  <link type="Image/x-icon" href="../public/favicon.ico" rel="icon">
+  <title>Smart Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="block"></div>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="">
+          <h1 class="header-title"><span class="header-title-logo">SMART</span>store</h1>
+        </a>
+        <form action="" method="get" class="header-search">
+          <input type="search" class="header-input" placeholder="Search here..." autofocus>
+          <div class="search-icon"></div>
+        </form>
+        <div class="cart">
+          <div class="cart-icon"></div>
+          <div class="cart-title">Корзина</div>
+          <div class="cart-count">0</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <h2 class="main-title">Смартфоны</h2>
+      <div class="main-wrapper">
+        <aside class="filters">
+          <div class="filters-item">
+            <h3 class="filters-title">Фильтры</h3>
+          </div>
+          <div class="filters-item" id="manufacturer">
+            <div class="filters-subtitle">Производитель</div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Apple</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Samsung</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Xiaomi</div>
+            </div>
+          </div>
+          <div class="filters-item">
+            <div class="filters-subtitle">Год выпуска на рынок</div>
+            <div class="filters-range">
+                <input type="number" class="filters-range-input" year="0" placeholder="2018" min="2018" max="2022" id="inputYear">
+              -
+                <input type="number" class="filters-range-input" year="1" placeholder="2022" min="2018" max="2022" id="inputYear">
+            </div>
+            <div class="filters-range-slider" id="year"></div>
+          </div>
+          <div class="filters-item" id="color">
+            <div class="filters-subtitle">Цвет</div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">White</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Grey</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Blue</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Yellow</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Purple</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Red</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">Gold</div>
+            </div>
+          </div>
+          <div class="filters-item" id="countCamera">
+            <div class="filters-subtitle">Количество камер</div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">1</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">2</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">3</div>
+            </div>
+            <div class="filters-inner">
+              <div class="filters-checkbox"></div>
+              <div class="filters-lable">4</div>
+            </div>
+          </div>
+          <div class="filters-item popularity">
+            <div class="filters-subtitle">Только популярные</div>
+            <div class="filters-inner">
+              <div class="filters-checkbox" id="popularity"></div>
+            </div>
+          </div>
+          <div class="filters-item">
+            <div class="filters-subtitle">Количество на складе</div>
+            <div class="filters-range">
+              <input type="number" class="filters-range-input" amount="0" placeholder="1" min="1" max="7" id="inputAmount">
+              -
+              <input type="number" class="filters-range-input" amount="1" placeholder="10" min="1" max="10" id="inputAmount">
+            </div>
+            <div class="filters-range-slider" id="amount"></div>
+          </div>
+          <div class="filters-item">
+            <button class="button button-filters">Сброс фильтров</button>
+          </div>
+        </aside>
+        <section class="catalog">
+          <div class="catalog-tools">
+            <div class="reset-storage">
+              <button class="button button-storage">Сброс всех настроек</button>
+            </div>
+            <div class="catalog-sorting"><span>Сортировка</span>
+              <ul class="sorting-list">
+                <li class="list-item">по названию, от А до Z</li>
+                <li class="list-item">по названию, от Z до А</li>
+                <li class="list-item">по году выпуска, по возрастанию</li>
+                <li class="list-item">по году выпуска, по убыванию</li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog-products">
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a href="https://github.com/vpuzyrevich" class="footer-link">
+          <img src="./assets/icons/github.png" alt="github" class="github">
+        </a>
+        &copy; 2022
+      </div>
+    </div>
+  </footer>
+
+  <div class="pop-up"></div>
+
+  <template id="productsItemTemp">
+    <div class="catalog-item">
+      <img class="item-img">
+      <div class="item-name"></div>
+      <div class="item-inner">
+        <div class="item-subtitle">Производитель:</div>
+        <div class="item-manufacturer"></div>
+      </div>
+      <div class="item-inner">
+        <div class="item-subtitle">В наличии:</div>
+        <div class="item-amount"></div>
+      </div>
+      <div class="item-inner">
+        <div class="item-subtitle">Год выхода на рынок:</div>
+        <div class="item-year"></div>
+      </div>
+      <div class="item-inner">
+        <div class="item-subtitle">Цвет:</div>
+        <div class="item-color"></div>
+      </div>
+      <div class="item-inner">
+        <div class="item-subtitle">Количество камер:</div>
+        <div class="item-camera"></div>
+      </div>
+      <div class="item-inner">
+        <div class="item-subtitle">Популярность:</div>
+        <div class="item-popularity"></div>
+      </div>
+      <div class="item-price"></div>
+      <button class="item-cart">В корзину</button>
+    </div>
+  </template>
+</body>
+</html>
